@@ -1,0 +1,13 @@
+<!--components/searchHistory/searchHistory.wxml-->
+<view class="searchFlex">
+  <view class="searchFlex-box">
+    <view class="title">热门搜索
+    </view>
+    <view class="keywords">
+      <view class="keyword" wx:for="{{hotlist}}" data-val="{{item.kw}}" bindtap="goRouuesearching">
+        <text>{{item.kw}}</text>
+      </view>
+
+    </view>
+  </view>
+</view>

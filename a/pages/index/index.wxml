@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<!-- <wxs src="./tools.wxs"></wxs> -->
+
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+    </view>
+    <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="goRouterSearch">
+      <icon class="weui-icon-search" type="search" size="14"></icon>
+      <view class="weui-search-bar__text">搜索</view>
+    </label>
+  </view>
+  <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+</view>
+
+<view class="page-section page-section-spacing swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this" wx:for="{{indexData.banner.list}}">
+      <swiper-item>
+        <image class="img" src="{{item.image}}"></image>
+        <view class="swiper-item {{item}}">
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 视频列表 -->
+<!-- 今日视频数组 -->
+<block>
+  <videoList wx:for="{{indexData.today.list}}" item="{{item}}" />
+</block>
+
+
+<!-- 历史视频列表 -->
+<!-- 根据今日视频数组获取昨天视频数组 -->
+<block wx:for="{{historyVideoList}}" wx:for-item="day">
+  <view class="title">-{{day.selection_title}}-</view>
+  <videoList wx:for="{{day.list}}" item="{{item}}" />
+
+</block>

@@ -1,0 +1,11 @@
+<!--pages/searching/searching.wxml-->
+<!-- 视频列表 -->
+<!-- 今日视频数组 -->
+<block>
+  <videoList wx:for="{{today.list}}" item="{{item}}" />
+</block>
+
+
+<!-- 历史视频列表 -->
+<!-- 根据今日视频数组获取昨天视频数组 -->
+<videoList wx:for="{{historyVideoList}}" item="{{item}}" />

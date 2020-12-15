@@ -1,0 +1,14 @@
+var formating = function(time) {
+  var m = Math.floor(time / 60);
+  var n = time % 60;
+  m = m > 9 ? m : "0" + m;
+  n = n > 9 ? n : "0" + n;
+  console.log(m + ":" + n);
+  return m + ":" + n;
+}
+var fn = function() {
+  console.log("????");
+}
+module.export = {};
+module.export.formating = formating;
+module.export.fn = fn;

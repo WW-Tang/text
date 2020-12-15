@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "searchHistory": "/components/searchHistory/searchHistory",
+    "searchHot": "/components/searchHot/searchHot"
+  }
+}

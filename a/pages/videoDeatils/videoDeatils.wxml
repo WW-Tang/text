@@ -1,0 +1,33 @@
+<!--pages/videoDeatils/videoDeatils.wxml-->
+<!-- 视频播放 -->
+<view class="section tc">
+  <video id="myVideo" src="{{data.content_video[0].progressive[0].https_url}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+</view>
+
+<!-- 视频详细 -->
+<view class="videodeatils">
+  <view class="title">{{data.title}}</view>
+  <view class="text">
+    <text class="type">#{{data.relate_video[0].name}}</text> /
+    <text class="time">{{data.duration}}</text>
+  </view>
+  <view class="txt">
+    {{data.intro}}
+  </view>
+</view>
+
+
+<!-- 相关推荐 -->
+<view class="title">{{data.relate_video[0].name}}</view>
+<view class="relate">
+  <movable-area class="movable-area" scale-area>
+    <movable-view style="width:{{data.relate_video[0].list.length*140+'px'}}" class="movable-view" direction="horizontal" bindchange="onChange" bindscale="onScale" scale scale-min="0.5" scale-max="4" scale-value="1">
+      <view class="box" wx:for="{{data.relate_video[0].list}}" style="background-image:url({{item.image}})" bindtap="goRoutervideo" data-id="{{item.postid}}">
+        <view class="weizhi">
+          <view>{{item.duration}}</view>
+          <view>{{item.title}}</view>
+        </view>
+      </view>
+    </movable-view>
+  </movable-area>
+</view>

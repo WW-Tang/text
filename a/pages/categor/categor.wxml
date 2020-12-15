@@ -1,0 +1,7 @@
+<!--pages/categor/categor.wxml-->
+<view class="roqi" wx:for="{{cateData.data}}" style="background-image:url({{item.icon}})" data-item="{{item}}" data-id="{{item.cate_type}}" bindtap="goRouterVideolist">
+  <view class="roqi-box">
+    <!-- <image src="{{item.icon}}"></image> -->
+    <text>{{item.catename}}</text>
+  </view>
+</view>

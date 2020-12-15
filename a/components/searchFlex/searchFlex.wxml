@@ -1,0 +1,43 @@
+<!--components/searchHistory/searchHistory.wxml-->
+<view class="searchFlex">
+  <view class="searchFlex-box">
+    <view class="title">{{obj.title}}
+      <view class="btn" wx:if="{{obj.btn}}">清除</view>
+    </view>
+    <view class="keywords">
+      <view class="keyword" wx:for="{{obj.arr}}">
+        <text>{{item}}</text>
+      </view>
+      <view class="keyword">
+        <text>夏xxx天</text>
+      </view>
+      <view class="keyword">
+        <text>夏天</text>
+      </view>
+      <view class="keyword">
+        <text>夏xwqeqxxxxx天</text>
+      </view>
+      <view class="keyword">
+        <text>夏天</text>
+      </view>
+      <view class="keyword">
+        <text>夏天</text>
+      </view>
+      <view class="keyword">
+        <text>夏x天</text>
+      </view>
+      <view class="keyword">
+        <text>夏天</text>
+      </view>
+      <view class="keyword">
+        <text>夏天</text>
+      </view>
+      <view class="keyword">
+        <text>夏xx天</text>
+      </view>
+      <view class="keyword">
+        <text>夏天</text>
+      </view>
+    </view>
+  </view>
+</view>

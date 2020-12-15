@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    
+    "videoList": "/components/videoList/videoList"
+  },
+  "onReachBottomDistance": 50
+}

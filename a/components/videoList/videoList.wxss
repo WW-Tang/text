@@ -1,0 +1,41 @@
+/* components/videoList/videoList.wxss */
+
+.list {
+  width: 100%;
+  height: 450rpx;
+  margin: 0;
+  padding: 0;
+}
+
+.list .box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.list .box>image {
+  width: 100%;
+  height: 100%;
+}
+
+.list .box>view.weizhi {
+  width: 100%;
+  position: absolute;
+  left: 30rpx;
+  bottom: 40rpx;
+}
+
+.list .box view.weizhi {
+  color: white;
+}
+
+.list .box view.weizhi  image {
+  width: 15px;
+  height: 15px;
+}
+
+.time {
+  margin-right: 15px;
+}

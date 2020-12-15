@@ -1,0 +1,16 @@
+<!--components/videoList/videoList.wxml-->
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class="list" bindtap="goRoutervideo" data-id="{{item.postid}}">
+  <view class="box">
+    <image src="{{item.image}}"></image>
+    <view class="weizhi">
+    <view>
+    <image src="../../assets/play.png"></image>
+    <text class="time">{{tools.formating(item.duration)}}</text>
+    <text class="time">{{tools.fn()}}</text>
+    <text class="type">#{{item.cates[0].catename}}</text>
+    </view>
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+</view>

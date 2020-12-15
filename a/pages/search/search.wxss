@@ -1,0 +1,13 @@
+/* pages/search/search.wxss */
+page{
+  background-color: black;
+}
+.weui-search-bar{
+  background-color: transparent;
+}
+.weui-search-bar__form{
+  background-color: #333;
+}
+.weui-search-bar__input{
+  color: white;
+}

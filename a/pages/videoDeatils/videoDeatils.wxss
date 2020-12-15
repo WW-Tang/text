@@ -1,0 +1,101 @@
+/* pages/videoDeatils/videoDeatils.wxss */
+
+.section {
+  width: 100%;
+}
+
+#myVideo {
+  width: 100%;
+}
+
+/* 视频详细 */
+
+.videodeatils {
+  width: 100%;
+}
+
+.videodeatils .title {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin: 20rpx 0;
+}
+
+/* 时间与类型 */
+
+.text {
+  width: 100%;
+  margin: 20px 0px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.text .time, .text .type {
+  font-size: 14px;
+}
+
+.text .type {
+}
+
+/* 简介 */
+
+.txt {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  color: #999;
+}
+
+/* 相关推荐 */
+
+.title {
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.relate {
+  width: 100%;
+  height: 250rpx;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.movable-area {
+  width: 100%;
+  height: 200rpx;
+}
+
+.movable-view {
+  /* width: 300%; */
+  height: 200rpx;
+}
+
+.box {
+  width: 130px;
+  height: 100%;
+  background-color: skyblue;
+  margin-right: 10px;
+  float: left;
+  background-size: 130px 100%;
+  position: relative;
+}
+
+.box .weizhi {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+
+.box .weizhi > view {
+  font-size: 12px;
+  color: white;
+  overflow: hidden;
+  /*文本不会换行*/
+  white-space: nowrap;
+  /*当文本溢出包含元素时，以省略号表示超出的文本*/
+  text-overflow: ellipsis;
+}
